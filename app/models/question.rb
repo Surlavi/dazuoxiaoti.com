@@ -98,6 +98,10 @@ class Question < ActiveRecord::Base
       "%.2f" % 0.00
     end
   end
+
+  def explanation_short_url
+    '/' + Shortener::ShortenedUrl.generate(explanation_url)
+  end
   
   def shuffle
     choice = choices[correct_index]

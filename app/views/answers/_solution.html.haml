@@ -24,7 +24,10 @@
     .explanation
       .ex_title= t(:'answer.explanation')
       = question.explanation
-
+      -if !question.explanation_url.empty?
+        .ex_source
+          来源：
+          %a{:href => question.explanation_short_url}= question.explanation_short_url
 .progress
   - if false
   -else

@@ -174,6 +174,10 @@ Dazuoxiaoti::Application.routes.draw do
   match 'sizhong', :controller => 'static', :action => 'sizhong'
   match 'fuzhong', :controller => 'static', :action => 'fuzhong'
   match 'diandian', :controller => 'static', :action => 'diandian'
+
+  # for short url
+  match '/:id' => "shortener/shortened_urls#show"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

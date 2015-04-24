@@ -59,3 +59,4 @@ gem 'spreadsheet',"0.8.5"
 gem 'capistrano','2.15.5'
 gem 'unicorn'
 gem 'pry'
+gem 'shortener'
